@@ -20,14 +20,14 @@ class SortedList {
     }
   }
   max() {
-    if (this.items.length === 0) {
+    if (this.items.length == 0) {
       throw new Error("EmptySortedList");
     }
     return this.items[this.length - 1];
   }
 
   min() {
-    if (this.items.length === 0) {
+    if (this.items.length == 0) {
       throw new Error("EmptySortedList");
     }
     return Math.min(...this.items);
@@ -38,7 +38,7 @@ class SortedList {
   }
 
   avg() {
-    if (this.items.length === 0) {
+    if (this.items.length == 0) {
       throw new Error("EmptySortedList");
     }
     return this.sum() / this.length;
